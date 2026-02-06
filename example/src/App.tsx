@@ -1,6 +1,6 @@
+import RNUpdater from '@pigeonmal/react-native-updater';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import RNUpdater from 'react-native-updater';
 export default function App() {
   const [version, setVersion] = useState(0);
   useEffect(() => {

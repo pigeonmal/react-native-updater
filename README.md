@@ -4,23 +4,18 @@ Update simply your app with new apk android without google playstore
 
 ## Installation
 
-
 ```sh
-npm install react-native-updater
+npm install @pigeonmal/react-native-updater
 ```
-
 
 ## Usage
 
-
 ```js
-import { multiply } from 'react-native-updater';
+import RNUpdater from 'react-native-updater';
 
-// ...
-
-const result = multiply(3, 7);
+RNUpdater.getVersionCode();
+RNUpdater.downloadApp(apkUrl);
 ```
-
 
 ## Contributing
 
@@ -33,5 +28,3 @@ const result = multiply(3, 7);
 MIT
 
 ---
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
