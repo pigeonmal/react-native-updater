@@ -1,12 +1,14 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-updater';
-
-const result = multiply(3, 7);
-
+import { useEffect, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import RNUpdater from 'react-native-updater';
 export default function App() {
+  const [version, setVersion] = useState(0);
+  useEffect(() => {
+    RNUpdater.getVersionCode().then(setVersion);
+  }, []);
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: {version}</Text>
     </View>
   );
 }
