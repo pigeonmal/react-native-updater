@@ -1,6 +1,6 @@
 {
   "name": "@pigeonmal/react-native-updater",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Update simply your app with new apk android without google playstore",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
