@@ -100,7 +100,7 @@ class DownloadService : IntentService("DownloadService") {
             }
             return true
         } catch (e: Exception) {
-            if (e.message?.toLowerCase()?.contains("connection reset") == true) {
+            if (e.message?.lowercase()?.contains("connection reset") == true) {
                 return false
             }
             throw e
